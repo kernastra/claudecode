@@ -1,0 +1,35 @@
+{
+  "name": "pulltile",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Pulltile: your GitHub pull requests as cards in ChatGPT and Claude",
+  "type": "module",
+  "scripts": {
+    "dev": "skybridge dev",
+    "dev:tunnel": "skybridge dev --tunnel",
+    "build": "skybridge build",
+    "start": "skybridge start",
+    "deploy": "alpic deploy"
+  },
+  "dependencies": {
+    "@clerk/backend": "^3.23.2",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "skybridge": "^2.0.3",
+    "vite": "^8.1.5",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@skybridge/devtools": "^2.0.3",
+    "@skybridge/vite-plugin": "^2.0.3",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "alpic": "^1.155.0",
+    "tsx": "^4.23.1",
+    "typescript": "^6.0.3"
+  },
+  "engines": {
+    "node": ">=24.18.0"
+  }
+}
