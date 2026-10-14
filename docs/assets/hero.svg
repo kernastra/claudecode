@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" width="1600" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c0b11"/>
+      <stop offset="1" stop-color="#161127"/>
+    </linearGradient>
+    <radialGradient id="warm" cx="0.12" cy="1" r="0.7">
+      <stop offset="0" stop-color="#d97757" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#d97757" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cool" cx="0.92" cy="0" r="0.6">
+      <stop offset="0" stop-color="#6d4cf0" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#6d4cf0" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.06"/>
+    </pattern>
+    <linearGradient id="band" x1="0" x2="1">
+      <stop offset="0" stop-color="#d97757" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#d97757" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f45e0"/>
+      <stop offset="1" stop-color="#7b3cf2"/>
+    </linearGradient>
+    <linearGradient id="cardfade" x1="0" x2="1">
+      <stop offset="0.35" stop-color="#5b3cf0" stop-opacity="0"/>
+      <stop offset="1" stop-color="#5b3cf0" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="600" fill="url(#bg)"/>
+  <rect width="1600" height="600" fill="url(#dots)"/>
+  <rect width="1600" height="600" fill="url(#warm)"/>
+  <rect width="1600" height="600" fill="url(#cool)"/>
+
+  <!-- Left: wordmark -->
+  <g font-family="Adwaita Sans, Noto Sans, sans-serif">
+    <rect x="96" y="132" width="214" height="40" rx="20" fill="#d97757" fill-opacity="0.14" stroke="#d97757" stroke-opacity="0.5"/>
+    <text x="203" y="158" text-anchor="middle" font-family="Adwaita Mono, monospace" font-size="17" letter-spacing="3" fill="#f0a283">FOR CLAUDE CODE</text>
+    <text x="92" y="292" font-size="118" font-weight="800" fill="#f4f1ee" letter-spacing="-3">claude<tspan fill="#d97757">code</tspan></text>
+    <text x="98" y="356" font-size="31" fill="#a8a3b3">Mods, skills and MCP apps that turn Claude Code</text>
+    <text x="98" y="398" font-size="31" fill="#a8a3b3">into a workstation built around how you work.</text>
+    <g font-size="20" font-weight="600">
+      <rect x="98" y="448" width="104" height="44" rx="22" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.14"/>
+      <text x="150" y="477" text-anchor="middle" fill="#e9e4f0">Mods</text>
+      <rect x="216" y="448" width="104" height="44" rx="22" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.14"/>
+      <text x="268" y="477" text-anchor="middle" fill="#e9e4f0">Skills</text>
+      <rect x="334" y="448" width="144" height="44" rx="22" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.14"/>
+      <text x="406" y="477" text-anchor="middle" fill="#e9e4f0">MCP Apps</text>
+    </g>
+  </g>
+
+  <!-- Right: a Claude Code window with a PR card and a usage band -->
+  <g filter="url(#shadow)">
+    <rect x="900" y="92" width="610" height="420" rx="22" fill="#18171f" stroke="#ffffff" stroke-opacity="0.16"/>
+  </g>
+  <circle cx="932" cy="122" r="7" fill="#ff5f57"/>
+  <circle cx="956" cy="122" r="7" fill="#febc2e"/>
+  <circle cx="980" cy="122" r="7" fill="#28c840"/>
+  <text x="1205" y="128" text-anchor="middle" font-family="Adwaita Mono, monospace" font-size="15" fill="#6f6a7a">claude — ~/dev/my-app</text>
+  <line x1="900" y1="146" x2="1510" y2="146" stroke="#ffffff" stroke-opacity="0.07"/>
+
+  <g font-family="Adwaita Mono, monospace" font-size="18">
+    <text x="930" y="186" fill="#d97757">❯</text>
+    <text x="952" y="186" fill="#d8d3e0">show my open pull requests</text>
+  </g>
+
+  <!-- PR card -->
+  <rect x="930" y="208" width="550" height="148" rx="16" fill="#000514" stroke="#ffffff" stroke-opacity="0.08"/>
+  <rect x="930" y="208" width="550" height="148" rx="16" fill="url(#cardfade)"/>
+  <circle cx="964" cy="242" r="16" fill="none" stroke="#c9d1d9" stroke-opacity="0.6" stroke-width="2.5"/>
+  <text x="994" y="248" font-family="Adwaita Sans, sans-serif" font-size="14" letter-spacing="2" fill="#8b949e">PULL REQUEST #64</text>
+  <rect x="1176" y="230" width="72" height="24" rx="12" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-opacity="0.5"/>
+  <text x="1212" y="247" text-anchor="middle" font-family="Adwaita Sans, sans-serif" font-size="14" fill="#3fb950">Open</text>
+  <text x="950" y="290" font-family="Adwaita Sans, sans-serif" font-size="23" font-weight="700" fill="#f0f6fc">Add dark mode to the dashboard</text>
+  <text x="950" y="330" font-family="Adwaita Sans, sans-serif" font-size="15" fill="#9da7b3">feature/dark-mode → main</text>
+  <text x="1150" y="330" font-family="Adwaita Sans, sans-serif" font-size="15" fill="#3fb950">✓ 4 checks passed</text>
+  <rect x="1432" y="226" width="30" height="30" rx="8" fill="none" stroke="#ffffff" stroke-opacity="0.25"/>
+  <path d="M1441 238l6 6 6-6" fill="none" stroke="#e6edf3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Usage band -->
+  <rect x="930" y="378" width="550" height="44" rx="12" fill="#212121"/>
+  <rect x="930" y="378" width="550" height="44" rx="12" fill="url(#band)"/>
+  <g font-family="Adwaita Mono, monospace" font-size="15">
+    <text x="950" y="406" fill="#e9e4f0">5h usage</text>
+    <rect x="1040" y="395" width="200" height="8" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+    <rect x="1040" y="395" width="124" height="8" rx="4" fill="#d97757"/>
+    <text x="1256" y="406" fill="#e9e4f0">62%</text>
+    <text x="1322" y="406" fill="#a8a3b3">resets 3h 12m</text>
+  </g>
+
+  <!-- Prompt -->
+  <rect x="930" y="440" width="550" height="48" rx="12" fill="#1b1a22" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="950" y="470" font-family="Adwaita Mono, monospace" font-size="17" fill="#6f6a7a">/pr</text>
+  <rect x="984" y="455" width="2" height="20" fill="#d97757"/>
+</svg>
