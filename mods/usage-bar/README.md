@@ -1,5 +1,11 @@
 # usage-bar — your Claude plan usage and context fill, right above the prompt
 
+<p align="center">
+  <img src="docs/themes.svg" alt="The usage bar's animated background for each month, from New Year's in January to Christmas in December" width="100%" />
+</p>
+
+<p align="center"><sub>The band's animated background for each month, rendered from the mod's own theme code.</sub></p>
+
 A Claude Code mod that shows how much of your plan's 5-hour and 7-day usage you've spent, when each window resets, and how full the current session's context window is, all in one compact band above the prompt. It runs in the terminal and in the Claude desktop app's Code tab from the same code. On desktop, the band has a softly animated background that changes with each month's holiday.
 
 ## Features
@@ -47,12 +53,6 @@ The band appears on its own in every session once the mod is loaded, reading you
 | `/usage-theme auto` | Go back to the current month's theme |
 
 **Themes by month:**
-
-<p align="center">
-  <img src="docs/themes.svg" alt="The usage bar's background for each month, from New Year's in January to Christmas in December" width="100%" />
-</p>
-
-<sub>Rendered from the mod's own theme code. If your system has reduced motion turned on, the particles hold still, just as they do in the mod.</sub>
 
 | Month | Theme | Month | Theme |
 |---|---|---|---|
