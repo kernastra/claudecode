@@ -1,10 +1,8 @@
 # pr-card — GitHub pull requests inside Claude Code
 
 <p align="center">
-  <img src="docs/bar.svg" alt="The PR bar's animated background in its three moods: checks passed, checks running, and checks failing" width="100%" />
+  <img src="docs/card.png" alt="The pull request card in the conversation, with the review thread open and the Fix with Claude button" width="100%" />
 </p>
-
-<p align="center"><sub>The PR bar's animated background as checks pass, run and fail, rendered from the mod's own art code.</sub></p>
 
 A Claude Code mod that keeps your pull request in view while you work. It draws a card for the PR right in the conversation, with its state, CI checks, reviews and unresolved review threads, and a **Fix with Claude** button that hands one review thread to Claude as a focused task. A PR bar above the prompt follows your branch's PR, and a details pane shows everything at once. It works in the terminal and in the Claude desktop app's Code tab from the same code.
 
@@ -19,6 +17,31 @@ A Claude Code mod that keeps your pull request in view while you work. It draws 
 - **Checks and reviews at a glance** — failing checks first, `required` where GitHub reports it, approvals, change requests and who is still to review
 - **A tool Claude can call** — `show_pr_card` gives Claude a one-line status (state, check and review counts), never the text of review comments
 - **Stays current** — refreshes on demand, after pushes, and in the background while checks are still settling
+
+## Screenshots
+
+**The PR bar above the prompt**, and its animated background as checks pass, run and fail:
+
+<p align="center">
+  <img src="docs/bar.png" alt="The PR bar: PR number and title, pending checks, review status, and GitHub, Refresh and Details buttons" width="100%" />
+</p>
+<p align="center">
+  <img src="docs/bar.svg" alt="The PR bar's animated background in its three moods: checks passed, checks running, and checks failing" width="100%" />
+</p>
+
+**The details pane** (`/pr-details`), with every section open:
+
+<p align="center">
+  <img src="docs/pane.png" alt="The details pane showing checks, reviews with an unresolved thread, files and commits" width="80%" />
+</p>
+
+**The tiles layout** (`/pr-tiles`):
+
+<p align="center">
+  <img src="docs/tiles.png" alt="The tiles layout: a header strip and four tiles for checks, reviews, files and commits" width="100%" />
+</p>
+
+<sub>The card, bar, pane and tiles are the mod's own desktop drawing from its test run, with a sample `acme/app` pull request, rendered outside Claude Code; spacing and fonts in the app can differ slightly. The animated bar is rendered from the mod's art code.</sub>
 
 ## Requirements
 
@@ -101,6 +124,7 @@ pr-card/
 │   └── refs.ts                  # Parsing PR references and git remotes
 ├── tests/                       # 47 tests: parsing, status, hostile input, rendering, refresh, the push hold
 ├── docs/
+│   ├── card.png, bar.png, pane.png, tiles.png   # Screenshots for this README
 │   ├── bar.svg                  # Animated PR bar image for this README
 │   └── render-bar.ts            # Regenerates bar.svg from hooks/band.tsx
 └── ARCHITECTURE.md              # How it's built on the mod API, for contributors
