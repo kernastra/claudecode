@@ -1,0 +1,30 @@
+{
+  "name": "github-pr-card",
+  "version": "0.1.0",
+  "description": "GitHub pull requests in Claude Code: an inline card (/pr), a PR bar above the prompt (/pr-band), checks, reviews, unresolved threads and Fix with Claude.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "pollSeconds": {
+      "type": "number",
+      "title": "Background refresh (seconds)",
+      "description": "How often a card with pending checks refreshes while it was viewed in the last 30 minutes. 0 turns background refresh off.",
+      "default": 60
+    },
+    "autoAttach": {
+      "type": "boolean",
+      "title": "Attach cards to gh pr create and git push",
+      "description": "Draw the card under successful `gh pr create`, `gh pr view` or `git push` rows.",
+      "default": true
+    },
+    "prBar": {
+      "type": "string",
+      "title": "PR bar above the prompt",
+      "description": "auto: shows when the session's branch has a PR or Claude pushes one (\u2715 hides it for the session). manual: only after /pr-band.",
+      "options": [
+        "auto",
+        "manual"
+      ],
+      "default": "auto"
+    }
+  }
+}

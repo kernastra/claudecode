@@ -41,9 +41,7 @@ Mods run inside Claude Code itself, in the terminal and the desktop app's Code t
 
 | Mod | What it does | Status |
 |---|---|---|
-| **[pr-card](mods/pr-card)** | A pull request card inline in the conversation: state, CI checks, reviews and unresolved threads, with **Fix with Claude** to hand one review thread to Claude as a focused task | Coming soon |
-| **[pr-bar](mods/pr-bar)** | A bar above the prompt that follows your branch's pull request, with a status-aware animated background | Coming soon |
-| **[pr-panel](mods/pr-panel)** | A side pane with the whole pull request: checks, reviews, files and commits | Coming soon |
+| **[pr-card](mods/pr-card)** | Your pull request inside Claude Code: an inline card with checks, reviews and unresolved threads, **Fix with Claude** for review feedback, a PR bar above the prompt and a details pane | **Available** |
 | **[usage-bar](mods/usage-bar)** | Your plan's usage limits and context fill above the prompt, with reset countdowns and a seasonal theme | **Available** |
 | **[subagent-monitor](mods/subagent-monitor)** | A live tree of running subagents: what each one is doing, how long it has run and what it costs | Coming soon |
 | **[context-guardian](mods/context-guardian)** | Tracks decisions and checkpoints in long sessions and writes a handoff note before context runs out | Planned |
@@ -115,8 +113,6 @@ claudecode/
 │   └── pulltile/          # GitHub pull requests as cards
 ├── mods/                  # In-session add-ons for Claude Code
 │   ├── pr-card/
-│   ├── pr-bar/
-│   ├── pr-panel/
 │   ├── usage-bar/
 │   ├── subagent-monitor/
 │   └── context-guardian/
@@ -126,7 +122,7 @@ claudecode/
 
 ## Roadmap
 
-- **Publish the remaining mods** — the pull request card, bar and panel and the subagent monitor already run day to day and are being cleaned up for release
+- **Publish the subagent monitor** — it already runs day to day and is being cleaned up for release
 - **Context Guardian** — session checkpoints and handoff notes for long-running work
 - **First skills** — packaged workflows for reviews, releases and session notes
 
