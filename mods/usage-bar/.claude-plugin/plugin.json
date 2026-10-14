@@ -1,0 +1,6 @@
+{
+  "name": "usage-band",
+  "version": "0.1.0",
+  "description": "5-hour and 7-day plan usage plus context window fill, in one box above the prompt",
+  "types": "./types/index.d.ts"
+}

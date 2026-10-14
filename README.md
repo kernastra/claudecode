@@ -44,7 +44,7 @@ Mods run inside Claude Code itself, in the terminal and the desktop app's Code t
 | **[pr-card](mods/pr-card)** | A pull request card inline in the conversation: state, CI checks, reviews and unresolved threads, with **Fix with Claude** to hand one review thread to Claude as a focused task | Coming soon |
 | **[pr-bar](mods/pr-bar)** | A bar above the prompt that follows your branch's pull request, with a status-aware animated background | Coming soon |
 | **[pr-panel](mods/pr-panel)** | A side pane with the whole pull request: checks, reviews, files and commits | Coming soon |
-| **[usage-bar](mods/usage-bar)** | Your plan's usage limits and context fill above the prompt, with reset countdowns and a seasonal theme | Coming soon |
+| **[usage-bar](mods/usage-bar)** | Your plan's usage limits and context fill above the prompt, with reset countdowns and a seasonal theme | **Available** |
 | **[subagent-monitor](mods/subagent-monitor)** | A live tree of running subagents: what each one is doing, how long it has run and what it costs | Coming soon |
 | **[context-guardian](mods/context-guardian)** | Tracks decisions and checkpoints in long sessions and writes a handoff note before context runs out | Planned |
 
@@ -99,10 +99,10 @@ SKYBRIDGE_SINGLE_USER=1 npm run dev
 
 Open `http://localhost:3000`, pick `list-pull-requests` and click **Run** to see your pull requests as cards. To use it in ChatGPT or Claude with sign-in for other people, follow the setup in the [Pulltile README](mcps/pulltile#configuration).
 
-**Load a mod for one session** once its code is published:
+**Load a mod for one session**, for example the usage bar:
 
 ```bash
-claude --plugin-dir ./mods/pr-card
+claude --plugin-dir ./mods/usage-bar
 ```
 
 <!-- ===== Repo-Specific Sections ===== -->
@@ -126,7 +126,7 @@ claudecode/
 
 ## Roadmap
 
-- **Publish the mods** — the pull request card, bar and panel, the usage bar and the subagent monitor already run day to day and are being cleaned up for release
+- **Publish the remaining mods** — the pull request card, bar and panel and the subagent monitor already run day to day and are being cleaned up for release
 - **Context Guardian** — session checkpoints and handoff notes for long-running work
 - **First skills** — packaged workflows for reviews, releases and session notes
 
