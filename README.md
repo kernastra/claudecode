@@ -43,7 +43,7 @@ Mods run inside Claude Code itself, in the terminal and the desktop app's Code t
 |---|---|---|
 | **[pr-card](mods/pr-card)** | Your pull request inside Claude Code: an inline card with checks, reviews and unresolved threads, **Fix with Claude** for review feedback, a PR bar above the prompt and a details pane | **Available** |
 | **[usage-bar](mods/usage-bar)** | Your plan's usage limits and context fill above the prompt, with reset countdowns and a seasonal theme | **Available** |
-| **[subagent-monitor](mods/subagent-monitor)** | A live tree of running subagents: what each one is doing, how long it has run and what it costs | Coming soon |
+| **[subagent-monitor](mods/subagent-monitor)** | A live tree of running subagents: what each one is doing, how long it has run and what it costs | **Available** |
 | **[context-guardian](mods/context-guardian)** | Tracks decisions and checkpoints in long sessions and writes a handoff note before context runs out | Planned |
 
 ### Skills
@@ -122,7 +122,6 @@ claudecode/
 
 ## Roadmap
 
-- **Publish the subagent monitor** — it already runs day to day and is being cleaned up for release
 - **Context Guardian** — session checkpoints and handoff notes for long-running work
 - **First skills** — packaged workflows for reviews, releases and session notes
 

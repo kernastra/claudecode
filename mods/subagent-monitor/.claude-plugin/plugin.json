@@ -1,0 +1,6 @@
+{
+  "name": "agent-tree",
+  "version": "0.1.0",
+  "description": "Shows subagents as a live tree inline and in a side pane, with per-agent token counts",
+  "types": "./types/index.d.ts"
+}
