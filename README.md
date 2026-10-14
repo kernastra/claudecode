@@ -48,7 +48,15 @@ Mods run inside Claude Code itself, in the terminal and the desktop app's Code t
 
 ### Skills
 
-Reusable Claude Code skills for recurring workflows live in [`skills/`](skills). The first ones are on the way.
+Reusable workflows Claude picks up from `~/.claude/skills/`. See the [skills index](skills).
+
+| Skill | What it does | Status |
+|---|---|---|
+| **[session-note](skills/session-note)** | Logs each work session to your Obsidian vault: what changed, commit hashes, open items | **Available** |
+| **[session-resume](skills/session-resume)** | Reads the last session note back and catches you up before work starts | **Available** |
+| **[research-brief](skills/research-brief)** | Researches a topic across sources and writes a designed HTML brief | **Available** |
+| **[obsidian-brief](skills/obsidian-brief)** | Turns a work session into a designed brief plus a linked vault note | **Available** |
+| **[prompt-optimizer](skills/prompt-optimizer)** | Turns a rough image idea into a detailed generation prompt | **Available** |
 
 ## Requirements
 
@@ -123,7 +131,7 @@ claudecode/
 ## Roadmap
 
 - **Context Guardian** — session checkpoints and handoff notes for long-running work
-- **First skills** — packaged workflows for reviews, releases and session notes
+- **More skills** — packaged workflows for reviews and releases
 
 Ideas and pull requests are welcome; open an issue to talk through anything bigger.
 
