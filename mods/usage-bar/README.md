@@ -48,6 +48,12 @@ The band appears on its own in every session once the mod is loaded, reading you
 
 **Themes by month:**
 
+<p align="center">
+  <img src="docs/themes.png" alt="The usage bar's background for each month, from New Year's in January to Christmas in December" width="100%" />
+</p>
+
+<sub>Rendered from the mod's own theme code as still frames; in Claude Code the particles drift, fall or twinkle.</sub>
+
 | Month | Theme | Month | Theme |
 |---|---|---|---|
 | January | New Year's | July | Independence Day |
@@ -69,6 +75,7 @@ usage-bar/
 │   ├── register.tsx             # The band: usage readings, layout, /usage-theme
 │   └── seasons.ts               # Monthly themes and the animated SVG background
 ├── tests/usage-band.test.ts     # Layout and theme tests
+├── docs/themes.png              # README image
 └── types/index.d.ts             # Shared types for the usage snapshot
 ```
 
